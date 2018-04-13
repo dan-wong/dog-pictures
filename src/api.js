@@ -18,8 +18,8 @@ export default {
     }
   },
 
-  getTopDogPictures(breed) {
-    return axios.get(`https://www.reddit.com/r/${this.getSubredditFromBreed(breed)}/top/.json?limit=5`)
+  getTopDogPictures(breed, limit) {
+    return axios.get(`https://www.reddit.com/r/${this.getSubredditFromBreed(breed)}/top/.json?limit=${limit}`)
         .then(response => {
             return response.data.data.children.map(obj => obj.data.url);
         });

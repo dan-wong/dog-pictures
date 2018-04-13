@@ -18,7 +18,8 @@ export default class Dogs extends React.Component {
     const breed = urlEnd.indexOf('breed') < 0 ? urlEnd : '';
 
     this.setState({ breed });
-    API.getTopDogPictures(breed).then((posts) => {
+
+    API.getTopDogPictures(breed, 10).then((posts) => {
       this.setState({ posts });
     });
   }
