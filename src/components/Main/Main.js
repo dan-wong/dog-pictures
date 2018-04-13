@@ -4,7 +4,6 @@ import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 
 import { DOG_BREED } from '../DogBreedConstants';
-import Constants from '../../constants';
 import styles from './Main.css';
 
 export default class Main extends React.Component {
@@ -13,10 +12,6 @@ export default class Main extends React.Component {
   };
 
   handleChange = (event, index, value) => this.setState({value});
-
-  handleSearch() {
-    window.location = '/foo';
-  }
 
   render() {
     return (
@@ -40,7 +35,7 @@ export default class Main extends React.Component {
               label="GIVE ME DOGS" 
               secondary={true} 
               className={styles.button}
-              onClick={() => window.location = `${Constants.ROOT_URI}dogs/${this.state.value}`} />
+              onClick={() => window.location = `${window.location}dogs/${this.state.value}`} />
           </div>
         </header>
       </div>

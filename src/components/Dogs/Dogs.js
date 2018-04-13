@@ -14,7 +14,7 @@ export default class Dogs extends React.Component {
   }
 
   componentDidMount() {
-    const urlEnd = window.location.pathname.split('/').pop();
+    const urlEnd = window.location.href.split('/').pop();
     const breed = urlEnd.indexOf('breed') < 0 ? urlEnd : '';
 
     this.setState({ breed });
@@ -28,7 +28,11 @@ export default class Dogs extends React.Component {
     const dogImages = (images) ? (
       images.map(function(post, index) {
         return (
-          <img key={index} src={post} className={styles.image} alt="doggos" />
+          (post.match(/\.(jpeg|jpg|gif|png)$/) != null) ? (
+            <img key={index} src={post} className={styles.image} alt="doggos" />
+          ) : (
+            <p></p>
+          )
         )
       })
     ) : (

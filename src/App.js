@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import ReactGA from 'react-ga';
 
 import Main from './components/Main/Main';
 import Dogs from './components/Dogs/Dogs';
-import Constants from './constants';
 
 import './App.css';
 
@@ -18,8 +17,8 @@ class App extends Component {
       <MuiThemeProvider>
         <Router>
           <div>
-            <Route exact path={`${Constants.ROOT_URI}`} component={Main} />
-            <Route path={`${Constants.ROOT_URI}dogs`} component={Dogs} />
+            <Route exact path="/" component={Main} />
+            <Route path="/dogs" component={Dogs} />
           </div>
         </Router>
       </MuiThemeProvider>
