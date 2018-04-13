@@ -1,0 +1,33 @@
+@import url("../../constants.css");
+
+h1 {
+    margin: 0px;
+    font-size: 38px;
+    color: var(--color-primary);
+}
+.header {
+    background-color: var(--color-primary);
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+.centerTitle {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: white;
+    white-space: nowrap;
+    -webkit-box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.3);
+}
+.inputContainer {
+    text-align: left;
+}
+.button {
+    margin-top: 20px;
+    float: right;
+}
