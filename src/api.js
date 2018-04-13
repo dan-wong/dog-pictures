@@ -13,6 +13,12 @@ export default {
         return "shiba";
       case "Samoyeds":
         return "samoyeds";
+      case "Aww":
+        return "aww";
+      case "Doggos":
+        return "dogpictures";
+      case "Puppies":
+        return "puppies";
       default:
         return "corgi";
     }

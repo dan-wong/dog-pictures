@@ -29,7 +29,7 @@ export default class Dogs extends React.Component {
     const dogImages = (images) ? (
       images.map(function(post, index) {
         return (
-          (post.match(/\.(jpeg|jpg|gif|png)$/) != null) ? (
+          (post.match(/\.(jpeg|jpg|png)$/) != null) ? (
             <img key={index} src={post} className={styles.image} alt="doggos" />
           ) : (
             <p></p>

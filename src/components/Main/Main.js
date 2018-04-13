@@ -29,6 +29,9 @@ export default class Main extends React.Component {
               <MenuItem value={DOG_BREED.LABRADOR} primaryText={DOG_BREED.LABRADOR} />
               <MenuItem value={DOG_BREED.SHIBA_INU} primaryText={DOG_BREED.SHIBA_INU} />
               <MenuItem value={DOG_BREED.SAMOYEDS} primaryText={DOG_BREED.SAMOYEDS} />
+              <MenuItem value={DOG_BREED.DOGGOS} primaryText={DOG_BREED.DOGGOS} />
+              <MenuItem value={DOG_BREED.PUPPIES} primaryText={DOG_BREED.PUPPIES} />
+              <MenuItem value={DOG_BREED.AWW} primaryText={DOG_BREED.AWW} />
             </SelectField>
             <br />
             <RaisedButton 
