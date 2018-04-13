@@ -8,14 +8,16 @@ import styles from './Main.css';
 
 export default class Main extends React.Component {
   state = {
-    breed: 1,
+    value: DOG_BREED.CORGI,
   };
 
   handleChange = (event, index, value) => this.setState({value});
 
+  handleSearch() {
+    window.location = '/foo';
+  }
+
   render() {
-    console.log(DOG_BREED);
-    
     return (
       <div className={styles.header}>
         <header className={styles.centerTitle}>
@@ -33,7 +35,11 @@ export default class Main extends React.Component {
               <MenuItem value={DOG_BREED.SAMOYEDS} primaryText={DOG_BREED.SAMOYEDS} />
             </SelectField>
             <br />
-            <RaisedButton label="GIVE ME DOGS" secondary={true} className={styles.button} />
+            <RaisedButton 
+              label="GIVE ME DOGS" 
+              secondary={true} 
+              className={styles.button}
+              onClick={() => window.location = `/dogs/${this.state.value}`} />
           </div>
         </header>
       </div>

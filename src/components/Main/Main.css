@@ -20,9 +20,9 @@ h1 {
     padding: 30px;
     background-color: white;
     white-space: nowrap;
-    -webkit-box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.3);
-    box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.5);
 }
 .inputContainer {
     text-align: left;
