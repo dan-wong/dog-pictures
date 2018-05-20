@@ -25,7 +25,7 @@ export default {
   },
 
   getTopDogPictures(breed, limit) {
-    return axios.get(`https://www.reddit.com/r/${this.getSubredditFromBreed(breed)}/top/.json?limit=${limit}`)
+    return axios.get(`https://www.reddit.com/r/${this.getSubredditFromBreed(breed)}/.json?limit=${limit}`)
         .then(response => {
             return response.data.data.children.map(obj => obj.data.url);
         });
