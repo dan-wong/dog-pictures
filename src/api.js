@@ -19,6 +19,8 @@ export default {
         return "dogpictures";
       case "Puppies":
         return "puppies";
+      case "Bunnies":
+        return "bunnies";
       default:
         return "corgi";
     }
