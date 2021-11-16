@@ -7,6 +7,7 @@ export const DOG_BREED = {
     AWW: "Aww",
     DOGGOS: "Doggos",
     PUPPIES: "Puppies",
+    BUNNIES: "Bunnies"
 };
 
 const constants = { DOG_BREED };
